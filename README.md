@@ -28,13 +28,13 @@ This is the frontend part of the Employee Management System, built with React.js
    git clone https://github.com/yourusername/employee-management-system-frontend.git
    cd employee-management-system-frontend
 
-2. Install the dependencies:
+2. ## Install the dependencies: ##
     npm install
 
 ## Running the Application ##
 
-1. Start the development server:
-        npm start
+1. ## Start the development server: ##
+                npm run dev
 
 2.The application will run on http://127.0.0.1:5173/
 
