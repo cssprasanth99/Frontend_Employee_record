@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { API_PATH } from "../utilities/ApiPath";
+import { Link } from "react-router-dom";
 
 const AllEmployees = () => {
   const [employees, setEmployees] = useState([]);
@@ -53,6 +54,7 @@ const AllEmployees = () => {
               <th>Designation</th>
               <th>Gender</th>
               <th>Courses</th>
+              <th>Update</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -81,6 +83,11 @@ const AllEmployees = () => {
                       {index < item.course.length - 1 ? ", " : ""}
                     </span>
                   ))}
+                </td>
+                <td>
+                  <Link to={`/${item._id}`}>
+                    <button>Update</button>
+                  </Link>
                 </td>
                 <td>
                   <button onClick={() => deleteEmployeeById(item._id)}>

@@ -5,11 +5,15 @@ import "./App.css";
 import LandingPage from "./Pages/LandingPage";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/forms/Login";
+import UpadateEmployee from "./Pages/UpadateEmployee";
 
 function App() {
   return (
     <div>
-      <LandingPage />
+      <Routes>
+        <Route path="/:employeeId" element={<UpadateEmployee />} />
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
     </div>
   );
 }
