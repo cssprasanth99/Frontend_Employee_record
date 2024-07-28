@@ -185,4 +185,41 @@ body{
     margin-right: 5px;
   }
   
+  /* product table */
+
+  .employee-table{
+    width: 80vw;
+    border-collapse: collapse;
+    margin: 50px;
+  }
+
+  .employee-table th,
+  .employee-table td{
+    border: 1px solid var(--bg-color);
+    padding: 8px;
+
+  }
+
+  .employee-table th{
+    text-align: left;
+    background-color: gray;
+  }
+
+  /* welocme page */
+  .welcome {
+    font-size: 24px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .welcome span {
+    text-transform: capitalize;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #007BFF;
+  }
   

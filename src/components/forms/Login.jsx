@@ -19,10 +19,14 @@ const Login = ({ showWelcomeHandler }) => {
       if (response.ok) {
         alert("Login success");
         localStorage.setItem("loginToken", data.token);
+        localStorage.setItem("userId", data.userId);
+        localStorage.setItem("userName", data.username);
         setEmail("");
         setPassword("");
         showWelcomeHandler();
+        window.location.reload();
       }
+      
     } catch (error) {
       console.error(error);
     }

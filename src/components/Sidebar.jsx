@@ -1,11 +1,15 @@
 import React from "react";
 
-const Sidebar = ({ showEmployeeshandler }) => {
+const Sidebar = ({ showEmployeesHandler, showAllEmployeesHandler }) => {
   return (
     <div className="sideBarSection">
       <ul>
-        <li onClick={showEmployeeshandler}>Add Employee</li>
-        <li>All Employees</li>
+        <li onClick={showEmployeesHandler} style={{ cursor: "pointer" }}>
+          Add Employee
+        </li>
+        <li onClick={showAllEmployeesHandler} style={{ cursor: "pointer" }}>
+          All Employees
+        </li>
       </ul>
     </div>
   );

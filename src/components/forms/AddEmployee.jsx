@@ -69,7 +69,6 @@ const AddEmployee = () => {
       if (response.ok) {
         console.log(data);
         alert("Employee added successfully");
-        // Clear form after submission (optional)
         setName("");
         setEmail("");
         setMobile("");
@@ -82,7 +81,7 @@ const AddEmployee = () => {
       }
     } catch (error) {
       console.log("Failed to add employee", error);
-      alert(error.message); // Display the error message to the user
+      alert(error.message);
     }
   };
 
