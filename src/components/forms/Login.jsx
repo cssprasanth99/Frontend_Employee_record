@@ -16,6 +16,7 @@ const Login = ({ showWelcomeHandler }) => {
         body: JSON.stringify({ email, password }),
       });
       const data = await response.json();
+      console.log(data);
       if (response.ok) {
         alert("Login success");
         localStorage.setItem("loginToken", data.token);
@@ -26,7 +27,6 @@ const Login = ({ showWelcomeHandler }) => {
         showWelcomeHandler();
         window.location.reload();
       }
-      
     } catch (error) {
       console.error(error);
     }

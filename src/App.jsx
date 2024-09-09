@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import LandingPage from "./Pages/LandingPage";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Login from "./components/forms/Login";
 import UpadateEmployee from "./Pages/UpadateEmployee";
 

@@ -42,6 +42,14 @@ body{
     
 }
 
+.sideBarSection ul Link{
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 .collectionSection{
     display: flex;
 }

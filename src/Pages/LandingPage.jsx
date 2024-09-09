@@ -6,7 +6,6 @@ import Register from "../components/forms/Register";
 import AddEmployee from "../components/forms/AddEmployee";
 import Welcome from "../components/Welcome";
 import AllEmployees from "../components/AllEmployees";
-import { Route, Routes } from "react-router-dom";
 
 const LandingPage = () => {
   const [showLogin, setShowLogin] = useState(false);
